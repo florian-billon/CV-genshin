@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BILLON Florian — Profile</title>
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    /* ====== GLOBAL ====== */
+    body {
+    background: url('img/background.png') no-repeat center center;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    }
+
+    .hero{
+      background: rgba(255, 255, 255, 0);
+      padding: 70px 15px;
+      text-align: center;
+    }
+
+    .section-title{
+      text-align: center;
+      margin: 50px 0 20px;
+      font-weight: 600;
+    }
+
+    .card{
+      background: rgba(30, 30, 30, 0);
+    }
+
+    .table thead th{
+      color: #ffd800;
+      font-weight: 600;
+    }
+
+    /* Mobile tweaks */
+    @media(max-width: 500px){
+      .hero h3{
+        font-size: 1.9rem;
+      }
+      img.profile{
+        max-width: 85px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="hero" style="color:aquamarine;">
+    <h3>BILLON Florian</h3>
+    <p>Pré-MSC student — Developer — Tech lover</p>
+  </header>
+
+  <main class="container">
+
+    <!-- ============== ABOUT + PROFILE + SKILLS ============== -->
+    <section class="row" style="color: aliceblue;">
+
+      <!-- ABOUT -->
+      <div class="col s12 m6 l4">
+        <h5 class="yellow-text text-lighten-3">About me</h5>
+        <p>I passed the Baccalaureate with highest honours in maths, physics-chemistry and computer science.</p>
+        <p>I am a Pré-MSC student at Epitech and I enjoy video game design, TCG, anime and game development.</p>
+        <p>I played tuba 8 years in a conservatory and organ since age 7.</p>
+        <p>Genshin Impact player (UID 771036611 — AR57 — 1028+ achievements).</p>
+      </div>
+
+      <!-- PROFILE -->
+      <div class="col s12 m6 l4">
+        <h5>Profile</h5>
+        <div class="card center-align">
+          <div class="card-content">
+            <img src="img/profile.jpg" class="circle responsive-img profile" alt="Profile picture" style="max-width:120px;">
+            <p style="margin-top:10px;">Social links :</p>
+          </div>
+
+          <div class="card-action center-align">
+            <a href="https://github.com/florian-billon" class="btn white-text green lighten-2 waves-effect">
+              <i class="material-icons left">code</i>GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/florian-billon-21b6ab36b/" class="btn white-text blue lighten-2 waves-effect">
+              <i class="material-icons left">business_center</i>LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SKILLS -->
+      <div class="col s12 m12 l4">
+        <h5 class="yellow-text text-lighten-3">Skills</h5>
+        <table class="highlight">
+          <thead>
+            <tr><th>Language / Field</th><th>Level</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Java</td><td>Very good</td></tr>
+            <tr><td><a href="https://www.root-me.org/Floblob" style="color:#00ff9d;">Cybersecurity</a></td><td>Good</td></tr>
+            <tr><td>HTML/CSS</td><td>Good</td></tr>
+            <tr><td>Python</td><td>Good</td></tr>
+            <tr><td>VHDL</td><td>Good</td></tr>
+            <tr><td>Assembler</td><td>Good</td></tr>
+            <tr><td>Organisation</td><td>Good</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+
+    <!-- ================= PORTFOLIO ================= -->
+    <section style="color: #00ff9d;">
+      <p class="center-align"><a href="https://florianbillon.github.io/Portfolio/">
+          <h5 class="section-title" style="color: #00ff9d;">My Portfolio</h5>
+      </a></p>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section>
+      <h5 class="section-title purple-text">Last projects</h5>
+
+      <div class="row">
+
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">
+                <a href="https://yunvan11.itch.io/la-cite-de-la-damnation-partie-1" style="color:#00ff9d;">
+                The doomed city
+                </a>
+              </span>
+              <p style="color:#ffffff;">A video game inspired by game books.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title" style="color:#00ff9d;">FencerStats</span>
+              <p style="color:#ffffff;">Project focused on fencing analytics & data.</p>
+            </div>
+          </div>
+        </div>
+
+         <div class="col s12 m6">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">
+                <a href="https://florianbillon.github.io/ebony-chronicles/" style="color:#00ff9d;">
+                  The ebony chronicles
+                </span>
+              <p style="color:#ffffff;">Strategy RPG game (project realized in 3 weeks)</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section>
+      <h5 class="section-title cyan-text">Contact</h5>
+
+      <form class="row white-text">
+        <div class="input-field col s12 m6">
+          <input id="lastname" type="text">
+          <label for="lastname">Lastname</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="firstname" type="text">
+          <label for="firstname">Firstname</label>
+        </div>
+
+        <div class="input-field col s12">
+          <input id="email" type="email">
+          <label for="email">Email</label>
+        </div>
+
+        <div class="input-field col s12">
+          <textarea id="message" class="materialize-textarea" style="color: #ffffff;"></textarea>
+          <label for="message" >Your message</label>
+        </div>
+
+        <div class="col s12 center-align" style="margin-bottom:30px;">
+          <button class="btn cyan waves-effect waves-light">
+            Send
+          </button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
