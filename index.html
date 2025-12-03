@@ -168,34 +168,50 @@
     <!-- ================= CONTACT ================= -->
     <section>
       <h5 class="section-title cyan-text">Contact (06.38.41.50.49) </br> OR </h5>
+<!-- ================= CONTACT ================= -->
+<section>
+  <h5 class="section-title cyan-text">Contact (06.38.41.50.49) </br> OR </h5>
 
-      <form class="row white-text">
-        <div class="input-field col s12 m6">
-          <input id="lastname" type="text">
-          <label for="lastname">Lastname</label>
-        </div>
-        <div class="input-field col s12 m6">
-          <input id="firstname" type="text">
-          <label for="firstname">Firstname</label>
-        </div>
+  <form class="row white-text" 
+        action="https://formspree.io/f/xovgwbvy"
+        method="POST"
+        id="contact-form">
 
-        <div class="input-field col s12">
-          <input id="email" type="email">
-          <label for="email">Email</label>
-        </div>
+    <div class="input-field col s12 m6">
+      <input id="lastname" name="lastname" type="text" required>
+      <label for="lastname">Lastname</label>
+    </div>
 
-        <div class="input-field col s12">
-          <textarea id="message" class="materialize-textarea" style="color: #ffffff;"></textarea>
-          <label for="message" >Your message</label>
-        </div>
+    <div class="input-field col s12 m6">
+      <input id="firstname" name="firstname" type="text" required>
+      <label for="firstname">Firstname</label>
+    </div>
 
-        <div class="col s12 center-align" style="margin-bottom:30px;">
-          <button class="btn cyan waves-effect waves-light">
-            Send
-          </button>
-        </div>
-      </form>
-    </section>
+    <div class="input-field col s12">
+      <input id="email" name="email" type="email" required>
+      <label for="email">Email</label>
+    </div>
+
+    <div class="input-field col s12">
+      <textarea id="message" name="message" class="materialize-textarea" 
+                style="color:#ffffff;" required></textarea>
+      <label for="message">Your message</label>
+    </div>
+
+    <div class="col s12 center-align" style="margin-bottom:30px;">
+      <button class="btn cyan waves-effect waves-light" type="submit">
+        Send
+      </button>
+    </div>
+  </form>
+</section>
+
+<script>
+  // Notification Materialize
+  document.getElementById("contact-form").addEventListener("submit", function() {
+    M.toast({html: "Message envoyé !"});
+  });
+</script>
 
   </main>
 
